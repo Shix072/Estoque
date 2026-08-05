@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title> Portal do professor gulosão</title>
+</head>
+<body>
+    <header>
+        <h1>Portal do professor </h1>
+        <p> Usario Logado: Prof. jorge</p>
+        <button type="button">Sair do sistema</button>
+        <hr>
+
+        <main>
+            <section>
+                <h2> Lançar Nova Avaliação/Atividade:</h2>
+                <form>
+                    <label for="Titulo_Avaliação">Nome da Avaliação:</label>
+                    <input type="text" id="Titulo_Avaliação" placeholder="Ex: peso" required>
+
+                    <label for="Exercicio"> Exercicio</label><br>
+                    <select id="displina" required>
+                        <option value="">Selecione o Exercicio</option>
+                        <option value="Supino">Supino</option>
+                        <option value="Triceps">Triceps</option>
+                        <option value="ombro">Ombro</option>
+                    </select><br><br>
+
+                    <label for="peso"> Peso da serie</label>
+                    <input type="number" id="peso" min="0" max="100" step="1" required>
+
+                    <label for="ficha"> Ficha de treino</label>
+                    <input type="file" id="ficha" accept=".pdf"><br><br>
+
+                    <button type="submit"> Lançar Avaliação</button>
+                </form>
+            </section>
+
+
+            <hr>
+
+            <section>
+                <h2>Desempenho dos alunos</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th rowspan="2"> Matricula</th>
+                            <th rowspan="2"> Nome do aluno</th>
+                            <th rowspan="2"> Notas Avaliativas</th>
+                            <th rowspan="2">  Media final</th>
+                            <th rowspan="2"> Presença (%)</th>
+                            <th rowspan="2"> Situação</th>
+                        </tr>
+                        <tr>
+                            <th> Nota 1</th>
+                            <th> Nota 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1234</td>
+                            <td>Dante</td>
+                            <td>6</td>
+                            <td>6.6</td>
+                            <td>48%</td>
+                            <td> Reprovado</td>
+                        </tr>
+                        <tr>
+                            <td>1235</td>
+                            <td>Sabrina</td>
+                            <td>9</td>
+                            <td>8.5</td>
+                            <td>95%</td>
+                            <td> Aprovado </td>
+                        </tr>
+                        <tr>
+                            <td>1236</td>
+                            <td>Dio brando</td>
+                            <td>7</td>
+                            <td>5.0</td>
+                            <td>75%</td>
+                            <td> Aprovado </td>
+                        </tr>
+                        <tr>
+                            <td>1237</td>
+                            <td>joão bundudo</td>
+                            <td>0</td>
+                            <td>0.5</td>
+                            <td>5%</td>
+                            <td> Reprovado </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4"><strong>Media geral</strong></td>
+                            <td><strong> 8.00</strong></td>
+                            <td colspan="2"><strong>Frequencia media: 91.25%</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+
+    </header>
+</body>
+</html>
