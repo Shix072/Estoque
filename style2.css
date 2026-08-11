@@ -1,0 +1,104 @@
+/*reset de margens e configuração global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    color: darkgray;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+hr {
+    display: none;
+}
+/*2. Cabeçalho e Rodapé */
+header {
+    background-color: black;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: blueviolet;
+    font-size: 0.875rem;
+    margin-top: 30px;
+}
+/*3. Estruturação dos cartões*/
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section{
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: black;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+section ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+section li{
+    background-color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+/*4. Formulários, inputs e seleções */
+form label {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: darkgray;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid white
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: blue;
+}
+
