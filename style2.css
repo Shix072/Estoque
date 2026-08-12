@@ -87,7 +87,7 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid white
+    border: 1px solid white;
     border-radius: 6px;
     font-size: 0.95rem;
     font-family: inherit;
@@ -102,3 +102,78 @@ input:focus, select:focus, textarea:focus {
     border-color: blue;
 }
 
+/*Ajuste fino para Radio e Checkbox*/
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 4px;
+    margin-left: 10px;
+}
+
+input[type="radio"]:first-of-type,
+input[type="checkbox"]:first-of-type{
+    margin-left: 0;
+}
+
+/* Botões */
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background-color: cornflowerblue;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+button[type="reset"]{
+    background-color: aliceblue;
+    color: #475569
+}
+
+button[type="reset"]:hover {
+    background-color: #cbd5e1;
+}
+
+/*5. Tabela de Chamados */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Remove as bordas padrão do HTML */
+table, th, td{
+    border:none;
+}
+thead{
+    background-color: #ffffff;
+}
+th, td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    vertical-align: middle;
+}
+
+th {
+    color: #475569;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+tbody tr:hover {
+    background-color: aliceblue;
+}
